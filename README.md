@@ -4,3 +4,6 @@ This is a simple single page react application that loads gist from github based
 ## Potential Improvements
 1. Use styled components instead of global styles
 2. Use toastr for user notifications instead of alerts
+
+### To Run
+To run the app in your localhost port 3000, simply clone the repository, run `npm install` in the project root to install the packages and `npm start` to start the server. Then browse http://localhost:3000 in your favorite browser
