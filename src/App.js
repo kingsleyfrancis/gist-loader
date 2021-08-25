@@ -10,12 +10,7 @@ function App() {
   const [isSearched, setSearched] = useState(false);
   const [searchedUsername, setSearchedUsername] = useState('');
   const [searchFailed, setSearchFailed] = useState(false);
-  /*const token = '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';
-  
-  const header = {
-    "Authorization": `token ${token}`
-};*/
-
+ 
   const loadGist = async (username) => {
     if(!username) {
       alert('Username is required');
@@ -29,9 +24,7 @@ function App() {
     try {
       
       setLoading(true);
-     /* let response = await axios.get(url, {
-        headers: header
-    });*/
+      
       let response = await axios.get(url);
       setLoading(false);
 

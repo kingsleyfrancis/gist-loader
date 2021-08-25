@@ -8,11 +8,7 @@ const Gist = (props) => {
     const [forks, setForks] = useState([]);
     const [isForksLoading, setForksLoading] = useState(false);
     const [forksLoaded, setForksLoaded] = useState(false);
-    //const token = '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';
-
-    /*const header = {
-        "Authorization": `token ${token}`
-    };*/
+    
 
     const loadForks = async () => {
         if(!gist)
@@ -21,9 +17,7 @@ const Gist = (props) => {
         const url = `${gist.forks_url}`;
         try {
             setForksLoading(true);
-            /*let response = await axios.get(url, {
-                headers: header
-            });*/
+          
             let response = await axios.get(url);
             setForksLoading(false);
             setForksLoaded(true);
