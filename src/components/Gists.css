@@ -1,0 +1,97 @@
+.gist-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gist-list li {
+    margin-bottom: 15px;
+}
+
+.gist-list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.gist {
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #abc;
+}
+
+.gist .tags, .gist .forks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: #555555;
+    margin-top: 15px;
+}
+
+.tag-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    flex-wrap: wrap;    
+}
+
+.tag-list li {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.tag-list li:last-of-type {
+    margin-right: 0;
+}
+
+.tag {
+    padding: 3px 5px;
+    border-radius: 3px;
+    display: inline-block;
+    background: #555555;
+    border: 1px solid #555555;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+}
+
+.forks > strong {
+    margin-right: 10px;
+}
+
+.fork {
+    border: 1px solid #abc;
+    padding: 3px 5px;
+    border-radius: 4px;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.fork-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fork img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #abc;
+    margin-right: 5px;
+}
+
+.fork a {
+    color: #555555;
+    font-size: 0.9em;
+    text-align: center;
+}
